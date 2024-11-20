@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IphoneTech</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="img/logo.png">
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+  <header class="bg-gray-800 text-white p-4 flex flex-col items-center text-center sm:flex-row sm:justify-between">
+    <a href="index.html" style="display: flex; align-items: center;">
+      <img src="img/logo.png" alt="Logo" class="w-12 h-12 sm:w-16 sm:h-16 mr-4 rounded-full">
+      <span style="font-size: 1.6rem; font-weight: bold;">IphoneTech</span>
+    </a>
+  
+
+    <nav>
+      <a href="#productos" style="text-decoration: none; font-size: 1.4rem; margin-right: 20px;">Productos</a>
+      <a href="#contacto" style="text-decoration: none; font-size: 1.4rem;">Contacto</a>      
+    </nav>    
+  </header>
+  
+  
+
+  
+  <section class="p-6">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <img src="img/iphonesPresentacion.jpg" alt="Imagen de presentación" class="w-full h-70 object-cover rounded-lg mb-4">
+        <p class="text-lg text-gray-700">"Desde el diseño sofisticado hasta el rendimiento superior, esta exposición destaca lo mejor de los modelos iPhone actuales."</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="productos" class="p-6">
+    <h2 class="text-white text-2xl font-bold text-center mb-4">Productos</h2>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen-lg mx-auto">
+      
+      <div class="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/14promax.jpg" alt="Item 1" class="w-full h-70 object-cover rounded-md mb-2 cursor-pointer"onclick="openImage(this)">
+        <h3 class="text-black text-xl font-semibold">Iphone 14 Pro Max</h3>
+        <div class="text-gray-600 overflow-hidden max-h-20 transition-all duration-300" id="info-14promax">
+          <br><strong>Informacion:</strong><br>• Pantalla Super Retina XDR OLED de 6.7 pulgadas: Ofrece colores vibrantes, negros profundos y una excelente resolución, ideal para ver contenido en alta definición.
+          <br><br>• Chip A16 Bionic: Potente procesador que mejora la velocidad y eficiencia en comparación con versiones anteriores, ideal para juegos, multitarea y tareas exigentes.
+          <br><br>• Cámara principal de 48 MP: Captura fotos detalladas y precisas, con mejoras en la iluminación y un rango dinámico amplio, ideal para condiciones de baja luz.
+          <br><br>• Conectividad 5G: Permite velocidades de descarga y carga ultrarrápidas, mejorando la experiencia en navegación, video streaming y videollamadas.
+          <br><br>• Funciones de seguridad avanzadas: Incluye detección de accidentes y emergencias mediante satélite, permitiendo la comunicación incluso sin cobertura celular.
+        </div>
+        <button class="text-blue-500 mt-2 underline" onclick="toggleInfo('info-14promax')">Mostrar más información</button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/iphone15promax.jpg" alt="Item 2" class="w-full h-70 object-cover rounded-md mb-2 cursor-pointer"onclick="openImage(this)">
+        <h3 class="text-black text-xl font-semibold">Iphone 15 Pro Max</h3>
+        <div class="text-gray-600 overflow-hidden max-h-20 transition-all duration-300" id="info-15promax">
+          <br><strong>Informacion:</strong><br>• Pantalla Super Retina XDR de 6.7 pulgadas: Proporciona una experiencia visual increíblemente detallada y vibrante, ideal para contenido multimedia.
+          <br><br>• Chip A17 Pro: El procesador más potente de Apple, optimizado para un rendimiento rápido y eficiente, especialmente en juegos y aplicaciones exigentes.
+          <br><br>• Cámara principal de 48 MP: Con un sistema de cámaras avanzadas y un sensor más grande, captura fotos de alta calidad con una mayor precisión de color y detalles.
+          <br><br>• Marco de titanio ultraligero: Proporciona un diseño duradero y resistente, pero con menos peso que los modelos anteriores.
+          <br><br>• USB-C: Estándar de carga y transferencia de datos, lo que permite una mayor compatibilidad y velocidad.
+          <br><br>• Conectividad 5G: Asegura velocidades de descarga y carga rápidas para una mejor experiencia de navegación y streaming.
+          <br><br>• Funciones de seguridad avanzadas: Incluye detección de accidentes y emergencia vía satélite, que te ayuda en situaciones críticas, incluso sin cobertura celular.
+        </div>
+        <button class="text-blue-500 mt-2 underline" onclick="toggleInfo('info-15promax')">Mostrar más información</button>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <img src="img/iphone16promax.jpg" alt="Item 3" class="w-full h-70 object-cover rounded-md mb-2 cursor-pointer "onclick="openImage(this)">
+        <h3 class="text-black text-xl font-semibold">Iphone 16 Pro Max</h3>
+        <div class="text-gray-600 overflow-hidden max-h-20 transition-all duration-300" id="info-16promax">
+          <br><strong>Informacion:</strong><br>• Pantalla Super Retina XDR de 6.9 pulgadas: Ofrece colores vibrantes y negros profundos, con una alta resolución ideal para ver contenido y jugar.
+          <br><br>• Chip A18: Procesador súper potente y eficiente, mejorando el rendimiento y la duración de la batería.
+          <br><br>• Cámara principal de 48 MP con zoom mejorado: Captura fotos detalladas y permite un zoom óptico de 5x, ideal para distancias largas.
+          <br><br>• Diseño en titanio: Más ligero y resistente a golpes y arañazos, ofreciendo mayor durabilidad.
+          <br><br>• USB-C más rápido: Carga más rápida y transferencia de datos superior.
+          <br><br>• Conectividad 5G: Velocidades de descarga y carga mucho más rápidas para streaming y navegación.
+          <br><br>• Funciones de seguridad avanzadas: Detección de caídas, emergencias vía satélite, y alertas automáticas a servicios de emergencia.
+        </div>
+        <button class="text-blue-500 mt-2 underline" onclick="toggleInfo('info-16promax')">Mostrar más información</button>
+      </div>
+    </div>
+</section>
+
+
+  
+  <section id="contacto" class="p-6 bg-gray-800">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md text-black">
+      <h2 class=" text-black text-2xl font-bold text-center mb-4">Contacto</h2>
+      <form id="contactForm" class="flex flex-col gap-4">
+        <input type="text" id="name" placeholder="Nombre" class="p-2 border border-gray-300 rounded" required>
+        <input type="email" id="email" placeholder="Email" class="p-2 border border-gray-300 rounded" required>
+        <textarea id="message" rows="4" placeholder="Mensaje" class="p-2 border border-gray-300 rounded" required></textarea>
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-780 text-white p-4 text-center mt-6">
+    <p>&copy; 2024 - IphoneTech Todos los derechos reservados.</p>
+    <div class="d-flex justify-content-center gap-3 mt-2">
+      <a href="#" class="hover:underline">Política de Privacidad</a>
+      <br>
+      <a href="https://www.facebook.com" target="_blank" class="text-white">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="text-white">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="text-white">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" class="text-white">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
